@@ -10,30 +10,346 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+   
+  body{
+    background-color: #F0F3F4;
+  }
+  
+
+.menu-area ul{
+  display: flex;
+  list-style: none;
+  width: 80%;
+  justify-content: space-between;
+ 
+  
+}
+.menu-area ul .dropdown-1{
+  width: 60px;
+  background-color: #FDFEFE;
+  border: #FDFEFE;
+  border-radius: 3px;
+ 
+  
+}
+.menu-area ul .dropdown-2{
+  width: 40px;
+  background-color:#FDFEFE;
+  border: #FDFEFE;
+  border-radius: 3px;
+}
+.menu-area .first{
+  margin-right: -350px;
+  color: grey;
+}
+.menu-area .login{
+ margin-left: -300px;
+ color: grey;
+ margin-right: -215px;
+ padding: auto;
+}
+#about{
+  margin-right: 370px;;
+}
+ #snap{
+   margin-top: -9px;
+  color: black;
+  font-size: 30px;
+  font-weight:700;
+}
+
+ #register{
+  padding-left: 100px;
+  padding-right: -200px;
+}
+/* .menu-area a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(14, 12, 12);
+ background-color: #fff;
+  height: 60px;
+  font-family:Poppins;
+  font-weight: bold;
+  text-decoration: none;
+ 
+
+} */
+
+
+/* .menu-area a:hover{
+  background: tomato;
+  color: #fff;
+} */
+/* .menu-area ul {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  position: relative;
+  justify-content: flex-start;
+
+}
+.menu-area .login{
+ margin-left: auto;
+}
+*/
+#company:hover, #features:hover, #careers:hover, #about:hover{
+  cursor: pointer;
+  color:black
+}
+
+
+.menu-area ul li:hover .dropdown-1 > li{
+  display: inline-block;
+  
+  color:black;
+  top: 0;
+  margin-left: -42px;
+  padding-left: 10px;
+  position: center;
+ 
+}
+
+#todo img{
+  float:left;
+  padding-right: 10px;
+}
+#Calendar img{
+  float:left;
+  padding-right: 10px;
+}
+#Reminder img
+{
+  float:left;
+  padding-right: 9px;
+}
+#Planning img {
+  float:left;
+  padding-right: 10px;
+}
+
+
+
+
+.dropdown-1 li:hover #todo{
+  text-align: right; 
+display:inline-block;
+
+}
+.dropdown-1 li:hover #Calendar{
+  text-align: right; 
+display:inline-block;
+
+}
+.dropdown-1 li:hover #Reminder{
+  text-align: right; 
+display:inline-block;
+
+}
+.dropdown-1 li:hover #Planning{
+  text-align: right; 
+display:inline-block;
+
+}
+
+
+
+
+.menu-area ul  li:hover .dropdown-2  > li{
+  display: block;
+  color:black;
+  top: 0;
+  margin-left: -41px;
+  padding-left: 10px;
+  position: center;
+ 
+  
+}
+.dropdown-1 li{
+  display: none;
+  position: relative;
+}
+.dropdown-1{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.dropdown-1 li:hover .dropdown-2 li:hover{
+  display: flex;
+}
+.dropdown-2 li{
+  display: none;
+  position: relative;
+}
+.dropdown-2{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+
+
+
+.banner-area{
+  
+  
+  display: flex;
+  align-items: center;
+ 
+ 
+}
+.banner-area.logo{
+  display: flex;
+  align-items: flex-start;
+}
+.banner-area .first-heading  {
+ 
+	color: rgb(15, 4, 4);
+	font-size: 80px;
+	font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+	
+} 
+.banner-area .second-heading  {
+ 
+	
+	color: rgb(15, 4, 4);
+	font-size: 80px;
+	font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+	
+} 
+.banner-area h3 {
+ 
+	color: rgb(91, 88, 88);
+	font-size:20px;
+	font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+  
+} 
+img{
+        max-width: 100%;
+        max-height: 100%;
+        display: block; /* remove extra space below image */
+    }
+    .box{
+        width: 430px;        
+        border: 1px solid F0F3F4;
+        margin-left: 850px;
+        margin-top: -595px;
+
+    }    
+    
+    
+    .logo{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items:flex-start;
+    gap: 1rem;
+    padding-top: 100px;
+    padding-left: 100px;
+    padding-bottom: 0;
+    margin:2rem;
+    width:90%;
+    }
+
+    button{
+    width: 15%;
+    background: black;
+    border: 2px solid grey;
+    border-radius: 16px;
+    cursor: pointer;
+    font-size: 15px;
+    color: white;
+    font-weight: lighter;
+    padding: .8rem 1rem;
+    margin-left: 140px;
+    margin-top: 50px;
+ }
+  button:hover{
+    background: none;
+    color: black;
+    font-weight: 600;
+ }
+
+
+
+    
+    
   </style>
 </head>
 <body>
+ 
+  <div class="menu-area">
+    <ul>
+      <li class="first" id="snap">Snap</li>
+      
+    
+      <li class="first" id="features" >Features
+        
+        <ul class="dropdown-1">
+          
+          <li id="todo"><img src="/images/icon-todo.svg" alt=""> Todo List</li>
+          <li  id="Calendar"><img src="/images/icon-calendar.svg" alt="">Calendar</li>
+          <li  id="Reminder"><img src="/images/icon-reminders.svg" alt="">Reminders</li>
+          <li  id="Planning"><img src="/images/icon-planning.svg" alt="">Planning</li>
+        
+        </ul>
+      </li>
+      <li class="first" id="company">Company
+        <ul class="dropdown-2">
+          <li>History</li>
+          <li>Our Team</li>
+          <li>Blog</li>
+        </ul>
+      
+      </li>
+      <li class="first" id="careers">Careers</li>
+      <li class="first" id="about">About</li>
 
-  Features
-  Company
-  Careers
-  About
-
-  Login
-  Register
-
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+      <li class="login" id="log">Login</li>
+      <li class="login" id="register">Register</li>
+    </ul>
   </div>
+  <div class="banner-area">
+   <div class="banner-text">
+     <h1 class="first-heading" style="
+     margin-top: 100px;
+     margin-left: 140px;
+     margin-bottom:0px;
+ ">Make </h1><br>
+     <h1 class="second-heading"style="
+     margin-top: 0px;
+     margin-left: 140px;
+     margin-bottom: 0px;
+ ">Remote Work</h1>
+     <h3 style="
+     margin-top: 40px;
+     margin-left: 140px;
+     margin-bottom: 0px;
+     text-align: justify;
+     text-justify: inter-word;
+ ">Get your team in Sync, no matter location <br>Streamline processes, create team rituals, and<br>watch productivity soar.</h3>
+ <button>Learn more</button> 
+ <div class="logo">
+  <img src="/images/client-databiz.svg" alt="">
+  <img src="/images/client-audiophile.svg" alt="">
+  <img src="/images/client-meet.svg" alt="">
+  <img src="/images/client-maker.svg" alt="">
+</div>
+ <div class="box">
+  <img src="images/image-hero-desktop.png" alt="Cloudy Sky">
+ </div>
+</div>
+
+
+  </div>
+  
+</body>
+<div class="main-screen">
+<!-- <img src="images/image-hero-desktop.png">  -->
+
+</div>
 </body>
 </html>
